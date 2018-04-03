@@ -1,6 +1,6 @@
 {
   "name": "durable-rule-converter",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Convert jQuery QueryBuilder rules to Durables Rules Engine rule",
   "main": "index.js",
   "scripts": {

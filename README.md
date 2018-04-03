@@ -91,17 +91,17 @@ jQuery Query Builder - http://querybuilder.js.org
 
 This is the first version of the library, which you can use for your basic needs if you are using Durable Rules Engine.
 
-You can use the above script in rules engine like below format,
+You can use the above script in rules engine like below JSON format,
 
-{
-    "myRule$state": {
-        "input": {
-            "t_0": {
-                "all": [<HERE>],
-                "to": "done",
-                "run": "done"
+    {
+        "myRule$state": {
+            "input": {
+                "t_0": {
+                    "all": [<HERE>],
+                    "to": "done",
+                    "run": "done"
+                },
             },
-        },
-        "done": {},
+            "done": {},
+        }
     }
-}
