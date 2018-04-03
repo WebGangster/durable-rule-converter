@@ -1,0 +1,34 @@
+{
+  "name": "durable-rule-converter",
+  "version": "0.0.1",
+  "description": "Convert jQuery QueryBuilder rules to Durables Rules Engine rule",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aravindnc/durable-rule-converter.git"
+  },
+  "keywords": [
+    "durable",
+    "rules",
+    "engine",
+    "jquery",
+    "querybuilder",
+    "query",
+    "builder",
+    "rulesengine",
+    "rules",
+    "engine",
+    "query",
+    "builder",
+    "converter"
+  ],
+  "author": "= <=> (=)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aravindnc/durable-rule-converter/issues"
+  },
+  "homepage": "https://github.com/aravindnc/durable-rule-converter#readme"
+}
