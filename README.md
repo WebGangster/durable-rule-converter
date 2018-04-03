@@ -1,5 +1,4 @@
-Durable Rule Converter
-======================
+# [durable-rule-converter](https://github.com/aravindnc/durable-rule-converter)
 
 This is a simple library to convert rules created from jQuery Query Builder to Durables Rules Engine
 
