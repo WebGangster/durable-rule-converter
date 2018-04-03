@@ -14,7 +14,7 @@ jQuery Query Builder - http://querybuilder.js.org
     const RuleConverter = require('durable-rule-converter');
 
     // output from jQuery Query Builder
-    var sampleData = {
+    var ruleInput = {
         "condition": "AND",
         "rules": [{
                 "id": "price",
