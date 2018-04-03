@@ -105,3 +105,13 @@ You can use the above script in rules engine like below JSON format,
             "done": {},
         }
     }
+
+## Supporting Operations
+
+Currently the library support below operations only,
+
+- Equal
+- Less Than
+- Less Than or Equal To
+- Greater Than
+- Greater Than or Equal To
