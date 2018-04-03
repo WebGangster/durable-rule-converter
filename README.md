@@ -64,27 +64,44 @@ jQuery Query Builder - http://querybuilder.js.org
 ## Sample Rule Output
 
     {
-        "$and": [{
-            "$lt": {
-                "price": 10.25
-            }
-        }, {
-            "$or": [{
-                "$eq": {
-                    "category": 2
+        "m": {
+            "$and": [{
+                "$lt": {
+                    "price": 10.25
                 }
             }, {
-                "$eq": {
-                    "category": 1
-                }
-            }, {
-                "$and": [{
+                "$or": [{
                     "$eq": {
-                        "in_stock": 1
+                        "category": 2
                     }
+                }, {
+                    "$eq": {
+                        "category": 1
+                    }
+                }, {
+                    "$and": [{
+                        "$eq": {
+                            "in_stock": 1
+                        }
+                    }]
                 }]
             }]
-        }]
+        }
     }
 
 This is the first version of the library, which you can use for your basic needs if you are using Durable Rules Engine.
+
+You can use the above script in rules engine like below format,
+
+{
+    "myRule$state": {
+        "input": {
+            "t_0": {
+                "all": [<HERE>],
+                "to": "done",
+                "run": "done"
+            },
+        },
+        "done": {},
+    }
+}

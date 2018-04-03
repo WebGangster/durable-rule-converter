@@ -5,7 +5,13 @@
  * @param {input} Rule output from jQuery QueryBuilder
  * @return {object}
  */
-module.exports = function(input) {
+module.exports = function (input) {
+	return {
+		m: convertRule(input)
+	}
+};
+
+function convertRule (input) {
     /** Settings **/
 	var defaultCondition = 'AND';
 
@@ -64,14 +70,6 @@ module.exports = function(input) {
 
 	var self = this;
 
-	if (input.condition && input.rules.length > 0) {
-		var obj = {};
-		obj = {
-			[obj[input.condition]]: []
-		}
-		output.push(obj);
-	}
-
 	return (function parse(group) {
 
 		if (!group.condition) {
@@ -112,4 +110,4 @@ module.exports = function(input) {
 		return (groupExpression);
 
 	})(input);
-};
+}
