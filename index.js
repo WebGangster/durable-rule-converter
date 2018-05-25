@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Adds commas to a number
+ * Convert jQuery QueryBuilder rules to Durables Rules Engine rule
  * @param {input} Rule output from jQuery QueryBuilder
  * @return {object}
  */
@@ -22,7 +22,7 @@ function convertRule(input) {
 
     var mongoOperators = {
         equal: '$eq',
-        not_equal: '$ne',
+        not_equal: '$neq',
         less: '$lt',
         less_or_equal: '$lte',
         greater: '$gt',
