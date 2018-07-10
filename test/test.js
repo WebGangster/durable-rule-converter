@@ -30,8 +30,8 @@ describe('#ruleConverter', function() {
                             "field": "category",
                             "type": "integer",
                             "input": "select",
-                            "operator": "equal",
-                            "value": 1
+                            "operator": "not_equal",
+                            "value": 90.5
                         },
                         {
                             "condition": "AND",
@@ -40,8 +40,8 @@ describe('#ruleConverter', function() {
                                 "field": "in_stock",
                                 "type": "integer",
                                 "input": "radio",
-                                "operator": "equal",
-                                "value": 1
+                                "operator": "less_or_equal",
+                                "value": 100
                             }]
                         }
                     ]
@@ -62,13 +62,13 @@ describe('#ruleConverter', function() {
 							"category": 2
 						}
 					}, {
-						"$eq": {
-							"category": 1
+						"$neq": {
+							"category": 90.5
 						}
 					}, {
 						"$and": [{
-							"$eq": {
-								"in_stock": 1
+							"$lte": {
+								"in_stock": 100
 							}
 						}]
 					}]

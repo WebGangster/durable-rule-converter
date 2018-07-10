@@ -28,34 +28,67 @@ function convertRule(input) {
         greater: '$gt',
         greater_or_equal: '$gte'
     }
+	
+	
 
     var mongoOperatorsFns = {
+		
         equal: function(v) {
+						
+			if(typeof v[1] == 'number') {
+				v[1] = parseFloat(v[1]);
+			}
+			
             return {
                 [v[0]]: v[1]
             };
         },
         not_equal: function(v) {
+			
+			if(typeof v[1] == 'number') {
+				v[1] = parseFloat(v[1]);
+			}
+			
             return {
                 [v[0]]: v[1]
             };
         },
         less: function(v) {
+			
+			if(typeof v[1] == 'number') {
+				v[1] = parseFloat(v[1]);
+			}
+			
             return {
                 [v[0]]: v[1]
             };
         },
         less_or_equal: function(v) {
+			
+			if(typeof v[1] == 'number') {
+				v[1] = parseFloat(v[1]);
+			}
+			
             return {
                 [v[0]]: v[1]
             };
         },
         greater: function(v) {
+			
+			if(typeof v[1] == 'number') {
+				v[1] = parseFloat(v[1]);
+			}
+			
             return {
                 [v[0]]: v[1]
             };
         },
         greater_or_equal: function(v) {
+			
+			if(typeof v[1] == 'number') {
+				v[1] = parseFloat(v[1]);
+			}
+			
             return {
                 [v[0]]: v[1]
             };
